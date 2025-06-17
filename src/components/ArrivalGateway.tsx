@@ -68,7 +68,7 @@ const ArrivalGateway: React.FC = () => {
           className="mb-8"
         >
           <motion.h1
-            className="text-6xl md:text-8xl font-bold text-white mb-6"
+            className="text-cosmic-title text-white mb-6 text-cosmic-shimmer"
             animate={{ 
               textShadow: [
                 '0 0 20px rgba(0, 255, 255, 0.5)',
@@ -82,19 +82,17 @@ const ArrivalGateway: React.FC = () => {
           </motion.h1>
           
           <div className="h-px bg-gradient-to-r from-transparent via-neon-cyan to-transparent w-full max-w-2xl mx-auto mb-6" />
-          <p className="text-xl md:text-2xl lg:text-3xl font-sacred text-neon-cyan/80 mb-2">
+          <p className="text-mystical text-neon-cyan/80 mb-2 text-sacred-glow">
               The Higher Dimension
             </p>
-          <p className="text-base md:text-lg text-white/60 max-w-2xl mx-auto leading-relaxed">
-            {/* Awaken to cosmic luxury. Transcend reality through sacred travel
-            experiences that bridge ancient wisdom with infinite possibility. */}
-              Step into a higher dimension where every moment is an awakening — a living journey through sacred adventures, luminous memories, and boundless wonder.
+          <p className="text-body-lg text-white/60 max-w-2xl mx-auto leading-relaxed font-prose">
+            Step into a higher dimension where every moment is an awakening — a living journey through sacred adventures, luminous memories, and boundless wonder.
             </p>
         </motion.div>
 
         <motion.button
           onClick={scrollToNext}
-          className="cursor-hover group relative px-8 md:px-12 py-3 md:py-4 rounded-full bg-white/5 backdrop-blur-lg border border-neon-cyan/30 text-neon-cyan font-cosmic text-base md:text-lg tracking-wide"
+          className="cursor-hover group relative px-8 md:px-12 py-3 md:py-4 rounded-full bg-white/5 backdrop-blur-lg border border-neon-cyan/30 text-neon-cyan font-cosmic text-base md:text-lg tracking-cosmic"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2, duration: 1 }}

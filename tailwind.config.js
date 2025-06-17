@@ -69,9 +69,27 @@ export default {
         },
       },
       fontFamily: {
-        cosmic: ["Orbitron", "Inter", "system-ui", "sans-serif"],
-        sacred: ["Cinzel", "Georgia", "serif"],
+        // Primary cosmic/futuristic fonts
+        cosmic: ["Orbitron", "Exo 2", "Space Grotesk", "system-ui", "sans-serif"],
+        space: ["Space Grotesk", "Orbitron", "system-ui", "sans-serif"],
+        tech: ["Rajdhani", "Exo 2", "system-ui", "sans-serif"],
+        
+        // Sacred/mystical fonts
+        sacred: ["Cinzel", "Cormorant Garamond", "Playfair Display", "serif"],
+        mystical: ["Philosopher", "Cinzel", "serif"],
+        ancient: ["Cormorant Garamond", "Crimson Text", "serif"],
+        
+        // Elegant display fonts
+        display: ["Playfair Display", "Cinzel", "serif"],
+        elegant: ["Cormorant Garamond", "Playfair Display", "serif"],
+        
+        // Body text fonts
         body: ["Inter", "system-ui", "sans-serif"],
+        prose: ["Crimson Text", "Inter", "serif"],
+        
+        // Specialty fonts
+        wisdom: ["Philosopher", "Crimson Text", "serif"],
+        ethereal: ["Cormorant Garamond", "Playfair Display", "serif"],
       },
       backdropBlur: {
         xs: "2px",
@@ -142,6 +160,11 @@ export default {
         'cosmic': '0 0 50px rgba(139, 92, 246, 0.3)',
         'neon': '0 0 30px currentColor',
         'inner-glow': 'inset 0 0 20px rgba(139, 92, 246, 0.2)',
+      },
+      letterSpacing: {
+        'cosmic': '0.1em',
+        'sacred': '0.05em',
+        'mystical': '0.08em',
       },
     },
   },

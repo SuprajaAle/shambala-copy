@@ -65,7 +65,7 @@ const TentRealm: React.FC = () => {
             transition={{ duration: 1 }}
             className="text-center spacing-content"
           >
-            <h2 className="text-heading-xl text-white mb-6">
+            <h2 className="text-sacred-title text-white mb-6 text-sacred-glow">
               Sacred Dwellings
             </h2>
             <div className="flex items-center justify-center space-x-4 mb-8">
@@ -75,7 +75,7 @@ const TentRealm: React.FC = () => {
               <div className="h-px bg-gradient-to-r from-transparent via-emerald-400 to-transparent w-16 sm:w-24 lg:w-32" />
               <Star className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400" />
             </div>
-            <p className="text-body-lg text-white/70 max-w-3xl mx-auto">
+            <p className="text-wisdom text-white/70 max-w-3xl mx-auto">
               Rest in harmony with nature's energy, where luxury accommodation meets spiritual awakening
             </p>
           </motion.div>
@@ -105,9 +105,9 @@ const TentRealm: React.FC = () => {
                           transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
                         />
                       </div>
-                      <h3 className="text-heading-md text-white">{tent.name}</h3>
-                      <p className="text-body-md text-white/60">{tent.description}</p>
-                      <div className="text-2xl lg:text-3xl font-bold text-neon-gold">{tent.price}</div>
+                      <h3 className="text-heading-md text-white font-sacred">{tent.name}</h3>
+                      <p className="text-ethereal text-white/60">{tent.description}</p>
+                      <div className="text-2xl lg:text-3xl font-bold text-neon-gold font-cosmic">{tent.price}</div>
                     </div>
 
                     <div className="spacing-items">
@@ -120,13 +120,13 @@ const TentRealm: React.FC = () => {
                           transition={{ duration: 0.5, delay: (index * 0.2) + (featureIndex * 0.1) }}
                         >
                           <Star className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                          <span className="text-body-md">{feature}</span>
+                          <span className="text-body-md font-prose">{feature}</span>
                         </motion.div>
                       ))}
                     </div>
 
                     <motion.button
-                      className="button-primary w-full"
+                      className="button-primary w-full font-cosmic"
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                     >

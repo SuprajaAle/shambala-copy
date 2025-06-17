@@ -44,24 +44,50 @@
     @apply px-4 py-2 rounded-lg bg-white/5 border border-white/20 text-white/80 font-medium transition-all duration-300 hover:bg-white/10 hover:border-white/30;
   }
 
+  /* Enhanced Typography Classes */
   .text-heading-xl {
-    @apply text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-cosmic font-thin;
+    @apply text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-cosmic font-thin tracking-cosmic;
   }
 
   .text-heading-lg {
-    @apply text-2xl sm:text-3xl lg:text-4xl font-cosmic font-light;
+    @apply text-2xl sm:text-3xl lg:text-4xl font-display font-light tracking-sacred;
   }
 
   .text-heading-md {
-    @apply text-xl sm:text-2xl font-cosmic font-medium;
+    @apply text-xl sm:text-2xl font-sacred font-medium tracking-sacred;
   }
 
   .text-body-lg {
-    @apply text-base sm:text-lg lg:text-xl;
+    @apply text-base sm:text-lg lg:text-xl font-prose;
   }
 
   .text-body-md {
-    @apply text-sm sm:text-base;
+    @apply text-sm sm:text-base font-body;
+  }
+
+  /* Specialized Typography */
+  .text-cosmic-title {
+    @apply font-cosmic text-6xl sm:text-7xl lg:text-8xl font-bold tracking-cosmic;
+  }
+
+  .text-sacred-title {
+    @apply font-sacred text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-sacred;
+  }
+
+  .text-mystical {
+    @apply font-mystical text-lg sm:text-xl font-normal tracking-mystical;
+  }
+
+  .text-wisdom {
+    @apply font-wisdom text-base sm:text-lg font-normal italic;
+  }
+
+  .text-ethereal {
+    @apply font-ethereal text-sm sm:text-base font-light tracking-wide;
+  }
+
+  .text-tech {
+    @apply font-tech text-sm sm:text-base font-medium tracking-wide uppercase;
   }
 
   .spacing-section {
@@ -132,6 +158,37 @@
 
   .neon-glow {
     filter: drop-shadow(0 0 8px currentColor) drop-shadow(0 0 16px currentColor);
+  }
+
+  /* Enhanced Text Effects */
+  .text-sacred-glow {
+    text-shadow: 
+      0 0 5px rgba(251, 191, 36, 0.5),
+      0 0 10px rgba(251, 191, 36, 0.3),
+      0 0 15px rgba(251, 191, 36, 0.2);
+  }
+
+  .text-mystical-glow {
+    text-shadow: 
+      0 0 5px rgba(139, 92, 246, 0.6),
+      0 0 10px rgba(139, 92, 246, 0.4),
+      0 0 20px rgba(139, 92, 246, 0.2);
+  }
+
+  .text-cosmic-shimmer {
+    background: linear-gradient(
+      90deg,
+      #00ffd5 0%,
+      #8b5cf6 25%,
+      #fbbf24 50%,
+      #f472b6 75%,
+      #00ffd5 100%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s linear infinite;
   }
 }
 
